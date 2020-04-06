@@ -3,68 +3,141 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_gradient"
+    android:background="@color/colorWhite"
     tools:context="com.meridianid.farizdotid.mahasiswaapp.activity.RegisterActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:padding="16dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginBottom="82dp"
         android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_matadewa" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textSize="24sp"
-            android:textColor="#fff"
-            android:fontFamily="sans-serif"
-            android:text="REGISTER"/>
+            android:fontFamily="@font/orbitron"
+            android:text="MATADEWA"
+            android:textColor="@color/colorBlack"
+            android:textSize="34sp"
+            android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/etNama"
-            android:layout_marginTop="8dp"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/orbitron"
+            android:text="COVID-19"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp" />
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nama"
-            android:textColorHint="#80FFFFFF"
-            android:padding="8dp"
-            android:inputType="textPersonName"
-            android:background="@drawable/bg_rectangle_edittext"
-            android:textColor="#80FFFFFF"/>
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@color/colorGreyBlue"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-        <EditText
-            android:id="@+id/etEmail"
-            android:layout_marginTop="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Email"
-            android:textColorHint="#80FFFFFF"
-            android:padding="8dp"
-            android:inputType="textEmailAddress"
-            android:background="@drawable/bg_rectangle_edittext"
-            android:textColor="#80FFFFFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="sans-serif"
+                android:text="Username"
+                android:textColor="@color/colorText" />
 
-        <EditText
-            android:id="@+id/etPassword"
-            android:layout_marginTop="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Password"
-            android:textColorHint="#80FFFFFF"
-            android:inputType="textPassword"
-            android:padding="8dp"
-            android:background="@drawable/bg_rectangle_edittext"
-            android:textColor="#80FFFFFF"/>
+            <EditText
+                android:id="@+id/etNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/bg_rectangle_edittext"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                android:textColor="#80FFFFFF"
+                android:textColorHint="#80FFFFFF" />
 
-        <Button
-            android:id="@+id/btnRegister"
-            android:layout_marginTop="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#FFF"
-            android:text="REGISTER"
-            android:background="@drawable/bg_rectangle_button"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="sans-serif"
+                android:text="Email"
+                android:textColor="@color/colorText" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/bg_rectangle_edittext"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="#80FFFFFF"
+                android:textColorHint="#80FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="sans-serif"
+                android:text="Password"
+                android:textColor="@color/colorText" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/bg_rectangle_edittext"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="#80FFFFFF"
+                android:textColorHint="#80FFFFFF" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/bg_rectangle_button"
+                android:paddingLeft="48dp"
+                android:paddingTop="0dp"
+                android:paddingRight="48dp"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
     </LinearLayout>
+
 </RelativeLayout>
